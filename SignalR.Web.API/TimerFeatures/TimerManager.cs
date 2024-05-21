@@ -20,7 +20,7 @@ namespace SignalR.Web.API.TimerFeatures
         {
             _action = action;
             _autoResetEvent = new AutoResetEvent(false);
-            _timer = new Timer(Execute, _autoResetEvent, 10000, 2000);
+            _timer = new Timer(Execute, _autoResetEvent, 5000, 2000);
             TImerStarted = DateTime.Now;
             isTimerStarted = true;
         }
